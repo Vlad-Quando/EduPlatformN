@@ -1,0 +1,253 @@
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.text-container {
+    background-color: white;
+    margin: 20px 100px;
+    padding: 15px;
+    border: none;
+    border-radius: 16px;
+}
+
+.text-container p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    filter: blur(10px);
+}
+
+.interface-container {
+    margin: 20px 100px;
+    height: 40%;
+
+    display: grid;
+    row-gap: 20px;
+    column-gap: 20px;
+
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "timer end"
+        "start stop";
+}
+
+.end-button {
+    background-color: white;
+    color: black;
+    padding: 15px 30px 15px 30px;
+    border: none;
+    border-radius: 16px;
+    align-self: start;
+
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+}
+
+.end-button:hover {
+    background-color: rgb(225, 225, 225);
+}
+.end-button:active {
+    background-color: rgb(171, 171, 171);
+}
+
+.timer {
+    background-color: white;
+    color: black;
+    padding: 15px 30px 15px 30px;
+    border: none;
+    border-radius: 16px;
+    align-self: start;
+
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.set-timer {
+    background-color: white;
+    color: black;
+
+    padding: 15px 30px 15px 30px;
+    border: none;
+    border-radius: 16px;
+    align-self: start;
+
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+
+    height: 57px;
+
+    transition: background-color 0.3s;
+}
+
+.set-timer:hover {
+    background-color: rgb(225, 225, 225);
+}
+.set-timer:active {
+    background-color: rgb(171, 171, 171);
+}
+
+.results {
+    display: none;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+    align-items: center;
+    border: 2px solid rgba(45, 80, 144, 0.826);
+    border-radius: 16px;
+    padding: 10px;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    
+    transform: translateY(-50%);
+    top: 50%;
+    position: relative;
+}
+.results p {
+    text-align: center;
+    margin: 5px;
+    filter: none;
+}
+
+.fr-word {
+    cursor: pointer;
+}
+
+#timer {
+    grid-area: timer;
+}
+#end-button {
+    grid-area: end;
+}
+#stop-timer {
+    grid-area: start;
+}
+#stop-timer-but {
+    grid-area: stop;
+}
+
+@media(max-width: 1100px) {
+    .text-container p {
+        font-size: 28px;
+    }
+}
+@media(max-width: 1000px) {
+    .text-container {
+        margin: 20px 70px 5px 70px;
+    }
+    .interface-container {
+        margin: 10px 70px;
+    }
+    .text-container p {
+        font-size: 25px;
+    }
+}
+@media(max-width: 750px) {
+    .text-container p {
+        font-size: 22px;
+    }
+    .timer,
+    .end-button,
+    .set-timer {
+        font-size: 17px;
+    }
+    .set-timer {
+        max-height: 52px;
+    }
+    .text-container {
+        margin: 15px 50px 5px 50px;
+    }
+    .interface-container {
+        margin: 10px 50px;
+    }
+}
+@media(max-width: 600px) {
+    .text-container {
+        margin: 15px 40px;
+    }
+    .interface-container {
+        margin: 10px 40px 5px 40px;
+        row-gap: 10px;
+    }
+}
+@media(max-width: 550px) {
+    .text-container {
+        margin: 20px 20px;
+    }
+    .interface-container {
+        margin: 10px 20px 5px 20px;
+    }
+    .text-container p {
+        font-size: 20px;
+    }
+    .timer,
+    .end-button,
+    .set-timer {
+        font-size: 15px;
+    }
+    .set-timer {
+        max-height: 50px;
+    }
+}
+@media(max-width: 450px) {
+    .text-container p {
+        font-size: 18px;
+    }
+    .timer,
+    .end-button,
+    .set-timer {
+        font-size: 13px;
+    }
+    .set-timer {
+        max-height: 47px;
+    }
+}
+@media(max-width: 396px) {
+    .timer {
+        font-size: 10px;
+    }
+}
+@media(max-width: 360px) {
+    .text-container p {
+        font-size: 16px;
+    }
+}
+@media(max-width: 340px) {
+    .text-container p {
+        font-size: 15px;
+    }
+    .timer {
+        font-size: 13px;
+    }
+    .interface-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        row-gap: 10px;
+
+        grid-template-areas: 
+            "timer"
+            "start"
+            "stop"
+            "end";
+    }
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static "exercises/css/jora/settings.css" %}">
+{% endblock style %}
+
+{% block content %}
+
+<form method="POST" class="form">
+    {% csrf_token %}
+    <div class="setting-container">
+        <div class="size">
+            <label class="size-label">Размер таблицы:</label>
+            <div class="size-input-container">
+                <button class="minus-button" type="button" onclick="minusSize()">-</button>
+                <input name="size" class="size-input" type="number" id="size-input" min="3" max="9" value="5" step="1">
+                <button class="plus-button" type="button" onclick="plusSize()">+</button>
+            </div>
+        </div>
+
+        <div class="time" id="time">
+            <label class="time-label">Время (с):</label>
+            <div class="time-input-container">
+                <button class="minus-button" type="button" onclick="minusTime()">-</button>
+                <input name="timer" class="time-input" type="number" id="time-input" min="0.4" max="2" value="1" step="0.1" readonly>
+                <button class="plus-button" type="button" onclick="plusTime()">+</button>
+            </div>
+        </div>
+
+        <div class="time" id="time">
+            <label class="time-label">Шаги:</label>
+            <div class="time-input-container">
+                <button class="minus-button" type="button" onclick="minusSteps()">-</button>
+                <input name="steps" class="time-input" type="number" id="steps-input" min="3" max="10" value="5" step="1" readonly>
+                <button class="plus-button" type="button" onclick="plusSteps()">+</button>
+            </div>
+        </div>
+    
+        <button class="start-button" type="submit">Старт</button>
+    </div>
+</form>
+
+<script src="{% static "exercises/js/jora/settings.js" %}"></script>
+
+{% endblock content %}

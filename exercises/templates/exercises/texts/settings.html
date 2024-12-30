@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% load static %}
+{% load exercise_tags %}
+
+{% block style %}
+
+<link rel="stylesheet" href="{% static 'exercises/css/texts/settings.css' %}">
+<link rel="stylesheet" href="{% static 'exercises/css/texts/search_win.css' %}">
+<link rel="stylesheet" href="{% static 'css/system-styles/scroller.css' %}">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+{% endblock style %}
+
+{% block content %}
+<form method="POST" class="form" id="form">
+    {% csrf_token %}
+    <div class="setting-container">
+        <div class="text-cont">
+            <label class="text-label" id="text-label">Текст:</label>
+            {% get_texts as texts %}
+            <p id="text-selected" class="mode-selected">{{ texts.0 }}</p>
+            <button class="text-button" id="text-button" type="button" onclick="showTextOptions()"><i id="text-button-icon" class='bx bxs-down-arrow'></i></button>
+            <button class="search-button" id="search-button" type="button" onclick="searchText()"><i id="search-text-button-icon" class='bx bx-search'></i></button>
+            <div id="text-options" class="text-options">
+                {% for text in texts %}
+                <p class="option-label">{{ text.name }}</p>
+                <input name="text" value="{{ text.name }}" class="text-option" type="checkbox" onchange="handleChange(this)">
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="mode-cont">
+            <label class="mode-label" id="mode-label">Режим:</label>
+            {% get_modes as modes %}
+            <p id="mode-selected" class="mode-selected">{{ modes.0 }}</p>
+            <button class="mode-button" id="mode-button" type="button" onclick="showModeOptions()"><i id="mode-button-icon" class='bx bxs-down-arrow'></i></button>
+            <div id="mode-options" class="mode-options">
+                {% for mode in modes %}
+                <p class="option-label">{{ mode.name }}</p>
+                <input name="mode" value="{{ mode.name }}" class="mode-option" type="checkbox" onchange="handleChange(this)">
+                {% endfor %}
+            </div>
+        </div>
+    
+        <button class="start-button" id="start-button" type="submit">Старт</button>
+    </div>
+    
+</form>
+
+<div class="search-window" id="search-window">
+    <div class="search-content">
+        <div class="upper-panel">
+            <div class="search-bar">
+                <input name='textname' type="text" id="search-field" placeholder="Название текста" required onchange="handleSearch(this)">
+                <i class='bx bx-search'></i>
+            </div>
+            <button class='search-eraser' onclick='clearSearchField()'><i class='bx bxs-eraser'></i></button>
+            <button class="close-search-win-but" onclick="closeSearch()">
+                <i class='bx bx-x'></i>
+            </button>
+        </div>
+        <div class="text-list" id="text-list">
+            {% get_texts as texts %}
+            {% for text in texts %}
+            {% if forloop.last %}
+            <div class="search-option last" onclick="selectSearch(event)">
+                <p class="option-label">{{ text.name }}</p>
+                <input id="searched-text" value="{{ text.name }}" type="checkbox" onchange="selectSearch(event)">
+            </div>
+            {% else %}
+            <div class="search-option" onclick="selectSearch(event)">
+                <p class="option-label">{{ text.name }}</p>
+                <input id="searched-text" name="text" value="{{ text.name }}" type="checkbox" onchange="selectSearch(event)">
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<script src="{% static 'exercises/js/texts/settings.js' %}"></script>
+<script src="{% static 'exercises/js/texts/settingsSearch.js' %}"></script>
+
+{% endblock content %}

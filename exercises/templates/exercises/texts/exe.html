@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block style %}
+
+<link rel="stylesheet" href="{% static "exercises/css/texts/exe.css" %}">
+
+{% endblock style %}
+
+{% block content %}
+
+<div class="container">
+    <div class="text-container">
+        {% autoescape off %}
+        <p>{{ data.text }}</p>
+        {% endautoescape %}
+    </div>
+    <div class="interface-container">
+        <a class="end-button" href="{% url "exercises:exercise-page" "texts" %}">Завершить</a>
+    </div>
+</div>
+
+<script src="{% static "exercises/js/texts/exe.js" %}"></script>
+
+{% endblock content %}

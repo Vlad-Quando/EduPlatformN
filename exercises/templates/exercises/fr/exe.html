@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block style %}
+
+<link rel="stylesheet" href="{% static "exercises/css/fr/exe.css" %}">
+
+{% endblock style %}
+
+{% block content %}
+
+<input id="time-data" type="hidden" data-time="{{ data.time }}">
+
+<div class="container">
+    <div class="text-container">
+        {% autoescape off %}
+        <p id="text">{{ data.text }}</p>
+        {% endautoescape %}
+        <div id="results" class="results">
+            <p id="time-passed">Минута прошла!</p>
+            <p id="words-read">Было прочитано 190 слов!</p>
+        </div>
+    </div>
+    <div class="interface-container">
+        <p class="timer noselect" id="timer">---</p>
+        <button id="stop-timer" class="set-timer" onclick="startTimer()">Старт</button>
+        <button id="stop-timer-but" class="set-timer" onclick="stopTimer()">Стоп</button>
+        <a id="end-button" class="end-button" href="{% url "exercises:exercise-page" "skorochtenie" %}">Завершить</a>
+    </div>
+</div>
+
+<script src="{% static "exercises/js/fr/exe.js" %}"></script>
+
+{% endblock content %}

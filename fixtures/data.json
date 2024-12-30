@@ -1,0 +1,974 @@
+[
+    {
+        "model": "auth.permission",
+        "pk": 1,
+        "fields": {
+            "name": "Can add log entry",
+            "content_type": 1,
+            "codename": "add_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 2,
+        "fields": {
+            "name": "Can change log entry",
+            "content_type": 1,
+            "codename": "change_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 3,
+        "fields": {
+            "name": "Can delete log entry",
+            "content_type": 1,
+            "codename": "delete_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 4,
+        "fields": {
+            "name": "Can view log entry",
+            "content_type": 1,
+            "codename": "view_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 5,
+        "fields": {
+            "name": "Can add permission",
+            "content_type": 2,
+            "codename": "add_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 6,
+        "fields": {
+            "name": "Can change permission",
+            "content_type": 2,
+            "codename": "change_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 7,
+        "fields": {
+            "name": "Can delete permission",
+            "content_type": 2,
+            "codename": "delete_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 8,
+        "fields": {
+            "name": "Can view permission",
+            "content_type": 2,
+            "codename": "view_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 9,
+        "fields": {
+            "name": "Can add group",
+            "content_type": 3,
+            "codename": "add_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 10,
+        "fields": {
+            "name": "Can change group",
+            "content_type": 3,
+            "codename": "change_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 11,
+        "fields": {
+            "name": "Can delete group",
+            "content_type": 3,
+            "codename": "delete_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 12,
+        "fields": {
+            "name": "Can view group",
+            "content_type": 3,
+            "codename": "view_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 13,
+        "fields": {
+            "name": "Can add user",
+            "content_type": 4,
+            "codename": "add_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 14,
+        "fields": {
+            "name": "Can change user",
+            "content_type": 4,
+            "codename": "change_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 15,
+        "fields": {
+            "name": "Can delete user",
+            "content_type": 4,
+            "codename": "delete_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 16,
+        "fields": {
+            "name": "Can view user",
+            "content_type": 4,
+            "codename": "view_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 17,
+        "fields": {
+            "name": "Can add content type",
+            "content_type": 5,
+            "codename": "add_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 18,
+        "fields": {
+            "name": "Can change content type",
+            "content_type": 5,
+            "codename": "change_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 19,
+        "fields": {
+            "name": "Can delete content type",
+            "content_type": 5,
+            "codename": "delete_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 20,
+        "fields": {
+            "name": "Can view content type",
+            "content_type": 5,
+            "codename": "view_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 21,
+        "fields": {
+            "name": "Can add session",
+            "content_type": 6,
+            "codename": "add_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 22,
+        "fields": {
+            "name": "Can change session",
+            "content_type": 6,
+            "codename": "change_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 23,
+        "fields": {
+            "name": "Can delete session",
+            "content_type": 6,
+            "codename": "delete_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 24,
+        "fields": {
+            "name": "Can view session",
+            "content_type": 6,
+            "codename": "view_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 25,
+        "fields": {
+            "name": "Can add упражнение",
+            "content_type": 7,
+            "codename": "add_exercises"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 26,
+        "fields": {
+            "name": "Can change упражнение",
+            "content_type": 7,
+            "codename": "change_exercises"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 27,
+        "fields": {
+            "name": "Can delete упражнение",
+            "content_type": 7,
+            "codename": "delete_exercises"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 28,
+        "fields": {
+            "name": "Can view упражнение",
+            "content_type": 7,
+            "codename": "view_exercises"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 29,
+        "fields": {
+            "name": "Can add Memo-предмет",
+            "content_type": 8,
+            "codename": "add_memoitems"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 30,
+        "fields": {
+            "name": "Can change Memo-предмет",
+            "content_type": 8,
+            "codename": "change_memoitems"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 31,
+        "fields": {
+            "name": "Can delete Memo-предмет",
+            "content_type": 8,
+            "codename": "delete_memoitems"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 32,
+        "fields": {
+            "name": "Can view Memo-предмет",
+            "content_type": 8,
+            "codename": "view_memoitems"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 33,
+        "fields": {
+            "name": "Can add Режим",
+            "content_type": 9,
+            "codename": "add_modes"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 34,
+        "fields": {
+            "name": "Can change Режим",
+            "content_type": 9,
+            "codename": "change_modes"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 35,
+        "fields": {
+            "name": "Can delete Режим",
+            "content_type": 9,
+            "codename": "delete_modes"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 36,
+        "fields": {
+            "name": "Can view Режим",
+            "content_type": 9,
+            "codename": "view_modes"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 37,
+        "fields": {
+            "name": "Can add Системное изображение",
+            "content_type": 10,
+            "codename": "add_systemimages"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 38,
+        "fields": {
+            "name": "Can change Системное изображение",
+            "content_type": 10,
+            "codename": "change_systemimages"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 39,
+        "fields": {
+            "name": "Can delete Системное изображение",
+            "content_type": 10,
+            "codename": "delete_systemimages"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 40,
+        "fields": {
+            "name": "Can view Системное изображение",
+            "content_type": 10,
+            "codename": "view_systemimages"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 41,
+        "fields": {
+            "name": "Can add текст",
+            "content_type": 11,
+            "codename": "add_texts"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 42,
+        "fields": {
+            "name": "Can change текст",
+            "content_type": 11,
+            "codename": "change_texts"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 43,
+        "fields": {
+            "name": "Can delete текст",
+            "content_type": 11,
+            "codename": "delete_texts"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 44,
+        "fields": {
+            "name": "Can view текст",
+            "content_type": 11,
+            "codename": "view_texts"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 45,
+        "fields": {
+            "name": "Can add Пользователя",
+            "content_type": 12,
+            "codename": "add_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 46,
+        "fields": {
+            "name": "Can change Пользователя",
+            "content_type": 12,
+            "codename": "change_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 47,
+        "fields": {
+            "name": "Can delete Пользователя",
+            "content_type": 12,
+            "codename": "delete_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 48,
+        "fields": {
+            "name": "Can view Пользователя",
+            "content_type": 12,
+            "codename": "view_user"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 1,
+        "fields": {
+            "app_label": "admin",
+            "model": "logentry"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 2,
+        "fields": {
+            "app_label": "auth",
+            "model": "permission"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 3,
+        "fields": {
+            "app_label": "auth",
+            "model": "group"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 4,
+        "fields": {
+            "app_label": "auth",
+            "model": "user"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 5,
+        "fields": {
+            "app_label": "contenttypes",
+            "model": "contenttype"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 6,
+        "fields": {
+            "app_label": "sessions",
+            "model": "session"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 7,
+        "fields": {
+            "app_label": "exercises",
+            "model": "exercises"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 8,
+        "fields": {
+            "app_label": "exercises",
+            "model": "memoitems"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 9,
+        "fields": {
+            "app_label": "exercises",
+            "model": "modes"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 10,
+        "fields": {
+            "app_label": "exercises",
+            "model": "systemimages"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 11,
+        "fields": {
+            "app_label": "exercises",
+            "model": "texts"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 12,
+        "fields": {
+            "app_label": "users",
+            "model": "user"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "1s0p9u1i79z0mt6x81qfouxmequmtzln",
+        "fields": {
+            "session_data": "e30:1su4m7:L_oklqM7y3F1Yg8orwMJ3poccN5vAKOQ-FK0NLygUPo",
+            "expire_date": "2024-10-11T06:48:23.025Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "3rdyuph4dren6mzp1tktryuuzkmxot6m",
+        "fields": {
+            "session_data": ".eJxVjDsOwjAQBe_iGlmx1_GHkj5nsHadXRxAiZRPhbg7iZQC2pl5760ybmvN28JzHnp1VUZdfhlhefJ4iP6B433SZRrXeSB9JPq0i-6mnl-3s_07qLjUfQ2NLeLJGR-FjZFWUrF2h9gARib0CT3bQKEVKQkCIbgIrQPvHAGrzxflKTfL:1sHHt7:WaTqtVgmbZix27hSQvDUj35ztRK-tyGTdFx2zmU5BIA",
+            "expire_date": "2024-06-26T06:55:17.968Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "60mgf319062dhx8j3qnunsyrenck8mp2",
+        "fields": {
+            "session_data": ".eJxVjEEOgjAQRe_StWksw7TUpXvOQGY6g0VNSSisjHdXEha6_e-9_zIDbWsetqrLMIm5GDCn340pPbTsQO5UbrNNc1mXie2u2INW28-iz-vh_h1kqvlbjx4BOJ7RoU8KMXpWjo41oGjjgBxiIz5CF4SgZcLACoGlawEpjeb9AdTGN90:1su6bQ:s8ZxCzJnCdvq7VW9wTiscbURTrW2f8UlGfEl-eWscQE",
+            "expire_date": "2024-10-11T08:45:28.708Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "p21sse5li0ex9uo3n2nw1he1r2gfdpao",
+        "fields": {
+            "session_data": ".eJxVjE0OwiAYRO_C2pC2AgWX7j0D-f6QqqFJaVfGu0uTLnQ5897MW0XY1hy3KkucWF3UoE6_HQI9peyAH1Dus6a5rMuEelf0Qau-zSyv6-H-HWSoua1DQEtpDMLUYWdaIHY9ccLkhzO6xGE0bKwX23tslvNGgD2LxQCG1OcLHUw5nQ:1su4yi:_rkiTdeluKyDXL7gVAkSVwOKjxHJqp6LL4eRq5ZKAHQ",
+            "expire_date": "2024-10-11T07:01:24.119Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "so7lqzkpa2aztz83nu165nabxrm7f7ir",
+        "fields": {
+            "session_data": "e30:1su4js:-Jn2QcOSn4jphIybnfwq-abwUdaf0RwcMsUyu8um_tw",
+            "expire_date": "2024-10-11T06:46:04.934Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "uvflgeum72kica3hy8h90wfb3u61hsh7",
+        "fields": {
+            "session_data": ".eJxVjMsOwiAQRf-FtSEwLR3GpXu_gQwM2KqBpI-V8d-1SRe6veec-1KBt3UM25LnMIk6K1Cn3y1yeuS6A7lzvTWdWl3nKepd0Qdd9LVJfl4O9-9g5GX81hHZEjnqsHfWG7LopSMaPBqBHHsBBFegIHYsySLLYEvPYiACpejU-wOwRTck:1sd59M:7neG_2cCXBlMbCZ_XsMivUe8CddIb-YW6jgU1P7o3TQ",
+            "expire_date": "2024-08-25T09:46:08.598Z"
+        }
+    },
+    {
+        "model": "exercises.exercises",
+        "pk": 1,
+        "fields": {
+            "name": "Тексты",
+            "image": "exercises_images/texts-img.png",
+            "slug": "texts",
+            "templates_folder_name": "texts"
+        }
+    },
+    {
+        "model": "exercises.exercises",
+        "pk": 2,
+        "fields": {
+            "name": "Memo",
+            "image": "exercises_images/memo-img.png",
+            "slug": "memo",
+            "templates_folder_name": "memo"
+        }
+    },
+    {
+        "model": "exercises.exercises",
+        "pk": 3,
+        "fields": {
+            "name": "Скорочтение",
+            "image": "exercises_images/fr-img.png",
+            "slug": "skorochtenie",
+            "templates_folder_name": "fr"
+        }
+    },
+    {
+        "model": "exercises.exercises",
+        "pk": 4,
+        "fields": {
+            "name": "Таблица Шульте",
+            "image": "exercises_images/shulte-img.png",
+            "slug": "shulte-table",
+            "templates_folder_name": "shulte"
+        }
+    },
+    {
+        "model": "exercises.exercises",
+        "pk": 5,
+        "fields": {
+            "name": "Струп-тест",
+            "image": "exercises_images/strup.png",
+            "slug": "strup-test",
+            "templates_folder_name": "strup"
+        }
+    },
+    {
+        "model": "exercises.texts",
+        "pk": 4,
+        "fields": {
+            "name": "Тучка и галки",
+            "content": "В деревне Тараканово живёт лошадь Тучка, рыжая как огонь. Её любят галки.\r\nНа других лошадей галки внимания не обращают, а как увидят Тучку, сразу садятся к ней на спину и начинают выщипывать шерсть.\r\n— У неё шерсть тёплая, как у верблюда, — говорит возчик Агафон. — Из этой бы шерсти носки связать.\r\nПрыгают галки по широкой спине, а Тучка посапывает, ей приятно, как щиплются галки. Шерсть-то сама лезет, то и дело приходится чесаться об забор. Набрав полный клюв тепла, галки летят под крышу, в гнездо. Тучка лошадь мирная. Она никогда не брыкается. Возчик Агафон тоже добрый человек. Задумчиво глядит на лошадиный хвост. Если б какая нахальная галка села ему на голову, он небось и глазом бы не моргнул."
+        }
+    },
+    {
+        "model": "exercises.texts",
+        "pk": 5,
+        "fields": {
+            "name": "До первого дождя",
+            "content": "Таня и Маша были очень дружны и всегда ходили в детский сад вместе. То Маша заходила за Таней, то Таня за Машей. Один раз, когда девочки шли по улице, начался сильный дождь. Маша была в плаще, а Таня в одном платье. Девочки побежали.\r\nосеева до первого дождя читать полностью\r\n— Сними свой плащ, мы накроемся вместе! — крикнула на бегу Таня.\r\n— Я не могу, я промокну! — нагнув вниз голову с капюшоном, ответила ей Маша.\r\nВ детском саду воспитательница сказала:\r\n— Как странно, у Маши платье сухое, а у тебя, Таня, совершенно мокрое, как же это случилось? Ведь вы же шли вместе?\r\n— У Маши был плащ, а я шла в одном платье, — сказала Таня.\r\n— Так вы могли бы укрыться одним плащом, — сказала воспитательница и, взглянув на Машу, покачала головой.\r\n— Видно, ваша дружба до первого дождя!\r\nОбе девочки покраснели: Маша за себя, а Таня за Машу."
+        }
+    },
+    {
+        "model": "exercises.texts",
+        "pk": 6,
+        "fields": {
+            "name": "Обидчики",
+            "content": "Толя часто прибегал со двора и жаловался, что ребята его обижают.\r\n— Не жалуйся, — сказала однажды мать, — надо самому лучше относиться к товарищам, тогда и товарищи не будут тебя обижать!\r\nТоля вышел на лестницу. На площадке один из его обидчиков, соседский мальчик Саша, что-то искал.\r\n— Мать дала мне монетку на хлеб, а я потерял ее, — хмуро пояснил он. — Не ходи сюда, а то затопчешь!\r\nТоля вспомнил, что сказала ему утром мама, и нерешительно предложил:\r\n— Давай поищем вместе!\r\nМальчики стали искать вместе. Саше посчастливилось: под лестницей в самом уголке блеснула серебряная монетка.\r\nрассказ осеевой обидчики\r\n— Вот она! — обрадовался Саша. — Испугалась нас и нашлась! Спасибо тебе. Выходи во двор. Ребята не тронут! Я сейчас, только за хлебом сбегаю!\r\nОн съехал по перилам вниз. Из темного пролета лестницы весело донеслось:\r\n— Вы-хо-ди!.."
+        }
+    },
+    {
+        "model": "exercises.texts",
+        "pk": 7,
+        "fields": {
+            "name": "Орёл и кошка",
+            "content": "За деревней весело играла кошка со своими котятами. Весеннее солнышко грело, и маленькая семья была очень счастлива. Вдруг, откуда ни возьмись — огромный степной орел: как молния, спустился он с вышины и схватил одного котёнка. Но не успел ещё орел подняться, как мать вцепилась уже в него. Хищник бросил котёнка и схватился со старой кошкой. Закипела битва на смерть.\r\nМогучие крылья, крепкий клюв, сильные лапы с длинными, кривыми когтями давали орлу большое преимущество: он рвал кожу кошки и выклевал ей один глаз. Но кошка не потеряла мужества, крепко вцепилась в орла когтями и перекусила ему правое крыло.\r\nТеперь уже победа стала клониться на сторону кошки; но орёл все еще был очень силён, а кошка уже устала; однако же она собрала свои последние силы, сделала ловкий прыжок и повалила орла на землю. В ту же минуту откусила она ему голову и, забыв свои собственные раны, принялась облизывать своего израненного котёнка."
+        }
+    },
+    {
+        "model": "exercises.texts",
+        "pk": 8,
+        "fields": {
+            "name": "Наши друзья",
+            "content": "Я люблю птиц. Грустно было бы жить без них на нашей зелёной планете. Веселит глаз их дивное оперение. Радует слух их чудесное пение. Интересно наблюдать за их лёгким полётом.\r\nБыстро кружат в чистом воздухе ласточки. На быстром лету они пьют воду, ловят мошек. Удивляет людей и гнездо этой птицы. Она ловко лепит его из земли и глины.\r\nВ развилке веточки можно заметить гнездо иволги. Оно сделано из травки, гибких стебельков, берёзовой кожуры. Смотришь на пернатых друзей и радуешься."
+        }
+    },
+    {
+        "model": "exercises.texts",
+        "pk": 9,
+        "fields": {
+            "name": "Журавль",
+            "content": "Радостно слышать весною крики журавлей в небе. Прилет журавлей\r\nобещает близкое тепло. Любит этих птиц наш народ. Много сказок и песен\r\nсложил он о журавлях.\r\nЖуравль очень высок на ногах. У него большие крылья и длинные перья.\r\nКлюв журавля крепкий и острый.\r\nГнездо журавль вьет прямо в ямке на поле. На сухую траву журавлиха\r\nкладет два крупных яйца. Молодых журавлят родители уводят в кусты или в\r\nкамыши.\r\nРаненый журавль бросается на спину и бьет собаку ногами и клювом.\r\nОдин охотник потерял глаз, когда хотел схватить раненого журавля.\r\nТеперь охота на журавлей в нашей стране запрещена."
+        }
+    },
+    {
+        "model": "exercises.texts",
+        "pk": 10,
+        "fields": {
+            "name": "Снегири и коты",
+            "content": "Поздней осенью, с первой порошей пришли к нам из северных лесов снегири. Пухлые и румяные, уселись они на яблонях, как будто заместо упавших яблок. А наши коты уж тут как тут. Тоже залезли на яблони и устроились на нижних ветвях. Дескать, присаживайтесь к нам, снегири, мы тоже вроде яблоки.\r\nСнегири хоть целый год и не видели котов, а соображают. Всё-таки у котов хвост, а у яблок — хвостик. До чего ж хороши снегири, а особенно — снегурки. Не такая у них огненная грудь, как у хозяина-снегиря, зато нежная — палевая.\r\nУлетают снегири, улетают снегурки. А коты остаются на яблоне. Лежат на ветках и виляют своими яблочными будто хвостами."
+        }
+    },
+    {
+        "model": "exercises.texts",
+        "pk": 11,
+        "fields": {
+            "name": "Под партой",
+            "content": "Я бросил решать задачку и побежал в сад к ребятам. Бегу – навстречу идёт наш учитель.\r\n– Как дела? – говорит. – Догоняешь ветер?\r\n– Да нет, я так, в садик.\r\nИду рядом с ним и думаю: «Вот сейчас спросит меня про задачу – какой ответ получился, – а что я скажу? Ведь я ещё не успел решить».\r\nА он:\r\n– Хорошая погода…\r\n– Ну да, – отвечаю, – конечно… – А сам боюсь: про задачу вдруг спросит.\r\nА он:\r\n– Нос-то у тебя красный! – и смеётся.\r\n– У меня всегда нос красный, такой уж у меня нос.\r\n– Что ж ты, – говорит, – так и собираешься с таким носом жить?\r\nИспугался я:\r\n– А что мне с ним делать?\r\n– Продать его и купить новый.\r\n– Это вы шутите.\r\nОн опять смеётся.\r\nЯ жду, когда же он про задачу спросит.\r\nТак и не спросил про задачу.\r\nЗабыл, наверное.\r\nНа другой день вызывает меня:\r\n– А ну, покажи задачу.\r\nНе забыл, оказывается."
+        }
+    },
+    {
+        "model": "exercises.texts",
+        "pk": 12,
+        "fields": {
+            "name": "Пора вставать",
+            "content": "Один мальчик, по имени Павлик, поступил в этом году в школу. И он очень боялся опоздать на уроки. А в доме у них будильника не было. Только были стенные часы-ходики. Тогда мальчик решил сделать себе будильник.\r\nОн заметил, что, когда он встаёт утром, гиря от часов доходит почти до табуретки.\r\nТогда он поставил на табуретку чайник с водой. Утром гиря опустилась в воду и, по закону физики, вытеснила воду из чайника. Но из чайника вода потекла не на пол, а она потекла по резиновой трубочке, которую мальчик приделал к чайнику. И вот течёт вода из чайника по трубочке и капает на мальчика. И мальчик уже знает, что восемь часов — пора вставать.\r\nНо потом родители мальчика не разрешили ему пользоваться этим будильником, потому что вода текла прямо на кровать и это было неудобно. И папаша принёс откуда-то настоящий будильник. И с тех пор мальчик сам заводил этот будильник и каждое утро вставал в указанное время."
+        }
+    },
+    {
+        "model": "exercises.texts",
+        "pk": 13,
+        "fields": {
+            "name": "Белое и жёлтое",
+            "content": "Самые главные бабочки — это, конечно, лимонницы. Они и появляются раньше всех.\r\nВ оврагах ещё снег, а уж над тёплой поляной кружат лимонницы. Их жёлтые крылья спорят со старым снегом и смеются над ним. А из земли — белые и жёлтые — торопятся первые цветы — ветреница, мать-и-мачеха.\r\nБелое и жёлтое показывает нам вначале весна, а уж потом всё остальное — и подснежники, и медуницу, и шоколадницу.\r\nНо с белым и жёлтым весна никак не может расстаться. То вспыхнут калужницы и купавы, то зацветёт черёмуха.\r\nБелое и жёлтое проходит через всю весну, а уж в середине лета сходятся белое и жёлтое в одном цветке ромашки."
+        }
+    },
+    {
+        "model": "exercises.texts",
+        "pk": 14,
+        "fields": {
+            "name": "Печенье",
+            "content": "Мама высыпала на тарелку печенье. Бабушка весело зазвенела чашками. Все уселись за стол. Вова придвинул тарелку к себе.\r\n— Дели по одному, — строго сказал Миша.\r\nМальчики высыпали все печенье на стол и разложили его на две кучки.\r\n— Ровно? — спросил Вова.\r\nМиша смерил глазами кучки:\r\n— Ровно... Бабушка, налей нам чаю!\r\nБабушка подала обоим чай. За столом было тихо. Кучки печенья быстро уменьшались.\r\n— Рассыпчатые! Сладкие! — говорил Миша.\r\n— Угу! — отзывался с набитым ртом Вова.\r\nМама и бабушка молчали. Когда все печенье было съедено, Вова глубоко вздохнул, похлопал себя по животу и вылез из-за стола. Миша доел последний кусочек и посмотрел на маму — она мешала ложечкой неначатый чай. Он посмотрел на бабушку — она жевала корочку черного хлеба..."
+        }
+    },
+    {
+        "model": "exercises.texts",
+        "pk": 15,
+        "fields": {
+            "name": "Барсучьи норы",
+            "content": "Оттого лес называется тёмным, что солнце смотрит в него сквозь вершины деревьев, как в оконце, но не всё в лесу увидит.\r\nТак, нельзя ему увидеть барсучьи норы и возле них хорошо утрамбованную песчаную площадку, где катаются молодые барсучата. Нор тут нарыто барсуками множество. Зачем же им столько нор? А всё из-за лисы, которая любит селиться в готовых квартирках и неопрятностью своею выживает хозяев — барсуков.\r\nУйти бы барсукам на новое место, подальше от непрошеной гостьи. Но место замечательное, переменить не хочется: песчаный холм, со всех сторон овраги, и все такой чащей заросло, что солнце смотрит и ничего увидеть не может в своё оконце. Вот и роют барсуки новые норки."
+        }
+    },
+    {
+        "model": "exercises.texts",
+        "pk": 16,
+        "fields": {
+            "name": "Плохо",
+            "content": "Собака яростно лаяла, припадая на передние лапы. Прямо перед ней, прижавшись к забору, сидел маленький взъерошенный котёнок. Он широко раскрывал рот и жалобно мяукал. Неподалёку стояли два мальчика и ждали, что будет. В окно выглянула женщина и поспешно выбежала на крыльцо. Она отогнала собаку и сердито крикнула мальчикам:\r\n— Как вам не стыдно!\r\n— А что стыдно? Мы ничего не делали! — удивились мальчики.\r\n— Вот это и плохо! — гневно ответила женщина."
+        }
+    },
+    {
+        "model": "exercises.texts",
+        "pk": 17,
+        "fields": {
+            "name": "Сторож",
+            "content": "В детском саду было много игрушек. По рельсам бегали заводные паровозы, в комнате гудели самолеты, в колясках лежали нарядные куклы. Ребята играли все вместе, и всем было весело. Только один мальчик не играл. Он собрал около себя целую кучу игрушек и охранял их от ребят.\r\n— Мое! Мое! — кричал он, закрывая игрушки руками.\r\nДети не спорили — игрушек хватало на всех.\r\n— Как мы хорошо играем! Как нам весело! — похвалились ребята воспитательнице.\r\n— А мне скучно! — закричал из своего угла мальчик.\r\n— Почему? — удивилась воспитательница. — У тебя так много игрушек!\r\nНо мальчик не мог объяснить, почему ему скучно.\r\n— Да потому, что он не игральщик, а сторож, — объяснили за него дети."
+        }
+    },
+    {
+        "model": "exercises.texts",
+        "pk": 18,
+        "fields": {
+            "name": "Старая яблоня",
+            "content": "Целый день сидит у дороги бабка, яблоками торгует.\r\nМчатся мимо яблок машины, мотоциклы, ревут трактора. Иной раз остановится машина, купит яблок и дальше гудит.\r\nВот едет грузовик. Этот яблок не купит, некогда ему. Автобус бы купил, да у него остановка за три километра. А это «Запорожец», если и купит, так полкило.\r\nЯ остановился, купил полведра.\r\n— А ты ведь, радетель, и на ведро тянешь, — сказала бабка.\r\nСидит бабка у дороги, а за спиной у неё рябина, а за забором яблоня старая стоит, на ней яблоки зреют, на землю падают.\r\nЦелый день работают они. Бабка торгует, яблоня яблоки роняет. Так и живут."
+        }
+    },
+    {
+        "model": "exercises.texts",
+        "pk": 19,
+        "fields": {
+            "name": "Камень",
+            "content": "На площади в одном городе лежал огромный камень. Камень занимал много места и мешал езде по городу. Призвали инженеров и спросили их, как убрать этот камень и сколько это будет стоить.\r\nОдин инженер сказал, что камень надо разбивать на куски порохом и потом по частям свезти его, и что это будет стоить 8000 рублей; другой сказал, что под камень надо подвести большой каток и на катке свезти камень, и что это будет стоить 6000 рублей.\r\nА один мужик сказал: «А я уберу камень и возьму за это 100 рублей».\r\nУ него спросили, как он это сделает. И он сказал: «Я выкопаю подле самого камня большую яму; землю из ямы развалю по площади, свалю камень в яму и заровняю землею».\r\nМужик так и сделал, и ему дали 100 рублей и еще 100 рублей за умную выдумку."
+        }
+    },
+    {
+        "model": "exercises.texts",
+        "pk": 20,
+        "fields": {
+            "name": "Тыква",
+            "content": "Тыкву любят во всём мире. Но тыква не овощ. Это вкусная ягода! У неё есть плотная корочка и сочная мякоть. Самая маленькая тыква весит меньше килограмма. А крупная бывает больше ста килограммов. Мы узнаём тыкву по радостному оранжевому цвету. А бывают ещё синие, зелёные, кремовые тыквы.\r\nВ жарких странах с помощью тыквы ловят обезьян. В тыкве сверлят маленькую дырочку. В неё насыпают рис.\r\nОбезьяна запускает в дырочку лапку, берёт рис. Но лапку с рисовым зерном она не вытащит. Слишком узко!"
+        }
+    },
+    {
+        "model": "exercises.texts",
+        "pk": 21,
+        "fields": {
+            "name": "Индеец и англичанин",
+            "content": "Индейцы взяли на войне в плен молодого англичанина, привязали его к дереву и хотели убить.\r\nСтарый индеец подошел и сказал: «Не убивайте его, а отдайте мне». Его отдали.\r\nСтарый индеец отвязал англичанина, свел его в свой шалаш, накормил и положил ночевать.\r\nНа другое утро индеец велел англичанину идти за собой. Они шли долго, и когда подошли близко к английскому лагерю, индеец сказал:\r\n«Ваши убили моего сына, я спас тебе жизнь; иди к своим и убивай нас».\r\nАнгличанин удивился и сказал: «Зачем ты смеешься надо мною? Я знаю, что наши убили твоего сына: убивай же меня скорее».\r\nТогда индеец сказал: «Когда тебя стали убивать, я вспомнил о своем сыне, и мне стало жаль тебя. Я не смеюсь: иди к своим и убивай нас, если хочешь». И индеец отпустил англичанина."
+        }
+    },
+    {
+        "model": "exercises.modes",
+        "pk": 1,
+        "fields": {
+            "name": "Слова с конца"
+        }
+    },
+    {
+        "model": "exercises.modes",
+        "pk": 2,
+        "fields": {
+            "name": "Убрать гласные"
+        }
+    },
+    {
+        "model": "exercises.modes",
+        "pk": 3,
+        "fields": {
+            "name": "Перемешать слова"
+        }
+    },
+    {
+        "model": "exercises.modes",
+        "pk": 4,
+        "fields": {
+            "name": "Случайные пробелы"
+        }
+    },
+    {
+        "model": "exercises.modes",
+        "pk": 5,
+        "fields": {
+            "name": "Предложения с конца"
+        }
+    },
+    {
+        "model": "exercises.modes",
+        "pk": 6,
+        "fields": {
+            "name": "Случайный регистр"
+        }
+    },
+    {
+        "model": "exercises.modes",
+        "pk": 7,
+        "fields": {
+            "name": "Убрать пробелы"
+        }
+    },
+    {
+        "model": "exercises.modes",
+        "pk": 8,
+        "fields": {
+            "name": "Анаграмма"
+        }
+    },
+    {
+        "model": "exercises.memoitems",
+        "pk": 1,
+        "fields": {
+            "name": "Квадроцикл",
+            "image": "memo_items/atv.png",
+            "level": 1,
+            "theme": 1
+        }
+    },
+    {
+        "model": "exercises.memoitems",
+        "pk": 2,
+        "fields": {
+            "name": "Велосипед",
+            "image": "memo_items/bicycle.png",
+            "level": 1,
+            "theme": 1
+        }
+    },
+    {
+        "model": "exercises.memoitems",
+        "pk": 3,
+        "fields": {
+            "name": "Автобус",
+            "image": "memo_items/camper.png",
+            "level": 1,
+            "theme": 1
+        }
+    },
+    {
+        "model": "exercises.memoitems",
+        "pk": 4,
+        "fields": {
+            "name": "Самосвал",
+            "image": "memo_items/dump-truck.png",
+            "level": 1,
+            "theme": 1
+        }
+    },
+    {
+        "model": "exercises.memoitems",
+        "pk": 5,
+        "fields": {
+            "name": "Красная машина",
+            "image": "memo_items/fiat-500.png",
+            "level": 1,
+            "theme": 1
+        }
+    },
+    {
+        "model": "exercises.memoitems",
+        "pk": 6,
+        "fields": {
+            "name": "Каток",
+            "image": "memo_items/road-roller.png",
+            "level": 1,
+            "theme": 1
+        }
+    },
+    {
+        "model": "exercises.memoitems",
+        "pk": 7,
+        "fields": {
+            "name": "Скутер",
+            "image": "memo_items/scooter.png",
+            "level": 1,
+            "theme": 1
+        }
+    },
+    {
+        "model": "exercises.memoitems",
+        "pk": 8,
+        "fields": {
+            "name": "Жёлтая машина",
+            "image": "memo_items/sedan.png",
+            "level": 1,
+            "theme": 1
+        }
+    },
+    {
+        "model": "exercises.memoitems",
+        "pk": 9,
+        "fields": {
+            "name": "Грузовик",
+            "image": "memo_items/truck.png",
+            "level": 1,
+            "theme": 1
+        }
+    },
+    {
+        "model": "exercises.memoitems",
+        "pk": 10,
+        "fields": {
+            "name": "Уницикл",
+            "image": "memo_items/unicycle.png",
+            "level": 1,
+            "theme": 1
+        }
+    },
+    {
+        "model": "exercises.systemimages",
+        "pk": 1,
+        "fields": {
+            "name": "Memo placeholder",
+            "image": "sys_img/placeholder.jpg"
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$DSVaePbZgKmOR8Jw5vgirw$kvl1HzWmyURnFah4vJYuS0spvN3EP6MxCrFZxW1PDQs=",
+            "last_login": "2024-09-27T06:50:42.883Z",
+            "is_superuser": true,
+            "username": "vlad",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-27T06:44:39.326Z",
+            "image": "",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$fhov2s3ZKpyTt0zBalsrTE$T75Zc1XyZSVngW8nCX46T/yNGpiEuGAVfZu9/K1UeEQ=",
+            "last_login": "2024-09-27T07:01:24.116Z",
+            "is_superuser": true,
+            "username": "root",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-09-27T07:01:09.389Z",
+            "image": "",
+            "groups": [],
+            "user_permissions": []
+        }
+    }
+]

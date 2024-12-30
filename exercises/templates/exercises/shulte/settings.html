@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static "exercises/css/shulte/settings.css" %}">
+<link rel="stylesheet" href="{% static "css/system-styles/input-range.css" %}">
+<link rel="stylesheet" href="{% static 'css/system-styles/scroller.css' %}">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+{% endblock style %}
+
+{% block content %}
+
+<form method="POST" class="form">
+    {% csrf_token %}
+    <div class="setting-container">
+        <div class="mode">
+            <label class="mode-label">Режим:</label>
+            <p id="mode-selected" class="mode-selected">Цифры</p>
+            <button class="mode-button" id="mode-button" type="button" onclick="showModeOptions()"><i id="mode-button-icon" class='bx bxs-down-arrow'></i></button>
+            <div id="mode-options" class="mode-options">
+                <p class="option-label">Цифры</p>
+                <input name="type" value="nums" id="check1" class="option-input" type="checkbox" checked="True" onchange="changeMode(this)">
+
+                <p class="option-label">Буквы</p>
+                <input name="type" value="letters" id="check2" class="option-input" type="checkbox" onchange="changeMode(this)">
+            </div>
+        </div>
+
+        <div class="quantity">
+            <label class="quantity-label">Размер таблицы:</label>
+            <div class="quantity-input-container">
+                <button class="minus-button" type="button" onclick="minusSize()">-</button>
+                <input name="size" class="quantity-input" type="number" id="size" min="3" max="7" value="4">
+                <button class="plus-button" type="button" onclick="plusSize()">+</button>
+            </div>
+        </div>
+
+        <div class="angle">
+            <label class="angle-label">Угол:</label>
+            <div class="angle-input-container">
+                <button class="minus-button" type="button" onclick="minusAngle()">-</button>
+                <input name="angle" class="angle-input" type="number" id="angle" min="-180" max="180" value="0">
+                <button class="plus-button" type="button" onclick="plusAngle()">+</button>
+            </div>
+        </div>
+    
+        <button class="start-button" type="submit">Старт</button>
+    </div>
+    
+</form>
+
+<script src="{% static "exercises/js/shulte/settings.js" %}"></script>
+
+{% endblock content %}

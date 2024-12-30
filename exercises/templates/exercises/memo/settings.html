@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static "exercises/css/memo/settings.css" %}">
+<link rel="stylesheet" href="{% static "css/system-styles/input-range.css" %}">
+<link rel="stylesheet" href="{% static 'css/system-styles/scroller.css' %}">
+{% endblock style %}
+
+{% block content %}
+
+<form method="POST" class="form">
+    {% csrf_token %}
+    <div class="setting-container">
+        <div class="quantity" id="quantity">
+            <label class="quantity-label">Количество карточек:</label>
+            <div class="quantity-input-container">
+                <button class="minus-button" type="button" onclick="quantityMinus()">-</button>
+                <input name="quantity" class="quantity-input" type="number" id="quantity-input" min="8" max="20" value="10" step="2" readonly>
+                <button class="plus-button" type="button" onclick="quantityPlus()">+</button>
+            </div>
+        </div>
+
+        <div class="time" id="time">
+            <label class="time-label">Время подготовки (с):</label>
+            <div class="time-input-container">
+                <button class="minus-button" type="button" onclick="timeMinus()">-</button>
+                <input name="time" class="time-input" type="number" id="time-input" min="3" max="10" value="5" step="1" readonly>
+                <button class="plus-button" type="button" onclick="timePlus()">+</button>
+            </div>
+        </div>
+    
+        <button class="start-button" id="start-button" type="submit">Старт</button>
+    </div>
+    
+</form>
+
+<script src="{% static "exercises/js/memo/settings.js" %}"></script>
+
+{% endblock content %}

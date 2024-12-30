@@ -1,0 +1,335 @@
+.table-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table-container {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    margin-top: 5px;
+}
+
+.table {
+    display: grid;
+    width: 32vw;
+    height: 32vw;
+    min-width: fit-content;
+    min-height: fit-content;
+    margin: 0;
+    padding: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    border-radius: 5px;
+    align-self: center;
+}
+
+.cell {
+    display: flex;
+    border: none;
+    border-radius: 2px;
+    margin: 6px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+.cell-cord {
+    display: flex;
+    border: none;
+    border-radius: 2px;
+    margin: 1px;
+    background-color: transparent;
+    color: white;
+    font-size: 27px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cord-alpha-container {
+    display: grid;
+    width: 32vw;
+    height: fit-content;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.cord-num-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: fit-content;
+    min-height: fit-content;
+    margin-right: 0;
+    margin-left: auto;
+    height: 32vw;
+}
+
+.cell-closed {
+    background-color: rgb(255, 255, 255);
+}
+
+.cell-opened {
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/static/exercises/exercises-img/jora-img.png");
+    background-color: transparent;
+    transition: none;
+}
+
+.wrong-cell {
+    background-color: brown;
+}
+
+.cell-closed:hover {
+    background-color: rgb(187, 187, 187);
+}
+
+@keyframes blink {
+    0% { opacity: 0.2; }
+    20% { opacity: 0.4; }
+    40% { opacity: 0.5; }
+    60% { opacity: 0.7; }
+    80% { opacity: 0.9; }
+    100% { opacity: 1; }
+}
+
+.blink-a {
+    animation-name: blink;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeout {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.disappear-start {
+    animation-name: fadeout;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+.disappeared-start {
+    opacity: 0;
+}
+
+.end-but-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.end-button {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 15px 30px 15px 30px;
+    border: none;
+    border-radius: 16px;
+    margin: 10px;
+    max-width: fit-content;
+    max-height: fit-content;
+    align-self: left;
+
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+}
+
+.end-button:hover {
+    background-color: rgb(225, 225, 225);
+}
+.end-button:active {
+    background-color: rgb(171, 171, 171);
+}
+
+.upper-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bottom-container {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.upper-el {
+    min-width: 150px;
+    max-height: fit-content;
+}
+.bottom-el {
+    max-height: fit-content;
+    max-width: 50%;
+    width: 50%;
+}
+
+.label-border {
+    border: 3px solid white;
+    border-radius: 16px;
+    padding: 10px;
+    margin: 10px 20px;
+    width: 10%;
+    min-width: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info-label {
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    background-color: transparent;
+}
+
+.jora-img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media(max-width: 1200px) {
+    .table {
+        width: 36vw;
+        height: 36vw;
+    }
+    .cord-alpha-container {
+        width: 36vw;
+    }
+    .cord-num-container {
+        height: 36vw;
+    }
+}
+@media(max-width: 1100px) {
+    .table {
+        width: 39vw;
+        height: 39vw;
+    }
+    .cord-alpha-container {
+        width: 39vw;
+    }
+    .cord-num-container {
+        height: 39vw;
+    }
+}
+@media(max-width: 1000px) {
+    .table {
+        width: 43vw;
+        height: 43vw;
+    }
+    .cord-alpha-container {
+        width: 43vw;
+    }
+    .cord-num-container {
+        height: 43vw;
+    }
+    .cell-cord {
+        font-size: 23px;
+    }
+}
+@media(max-width: 900px) {
+    .table {
+        width: 46vw;
+        height: 46vw;
+    }
+    .cord-alpha-container {
+        width: 46vw;
+    }
+    .cord-num-container {
+        height: 46vw;
+    }
+}
+@media(max-width: 800px) {
+    .table {
+        width: 53vw;
+        height: 53vw;
+    }
+    .cord-alpha-container {
+        width: 53vw;
+    }
+    .cord-num-container {
+        height: 53vw;
+    }
+    .cell-cord {
+        font-size: 20px;
+    }
+}
+@media(max-width: 700px) {
+    .table {
+        width: 62vw;
+        height: 62vw;
+    }
+    .cord-alpha-container {
+        width: 62vw;
+    }
+    .cord-num-container {
+        height: 62vw;
+    }
+    .cell-cord {
+        font-size: 20px;
+    }
+}
+@media(max-width: 600px) {
+    .table {
+        width: 72vw;
+        height: 72vw;
+    }
+    .cord-alpha-container {
+        width: 72vw;
+    }
+    .cord-num-container {
+        height: 72vw;
+    }
+    .cell-cord {
+        font-size: 16px;
+    }
+    .bottom-container {
+        display: flex;
+    }
+    .upper-container {
+        display: none;
+    }
+}
+@media(max-width: 500px) {
+    .table {
+        width: 76vw;
+        height: 76vw;
+    }
+    .cord-alpha-container {
+        width: 76vw;
+    }
+    .cord-num-container {
+        height: 76vw;
+    }
+    .cell-cord {
+        font-size: 14px;
+    }
+}
+@media(max-width: 400px) {
+    .table {
+        width: 80vw;
+        height: 80vw;
+    }
+    .cord-alpha-container {
+        width: 80vw;
+    }
+    .cord-num-container {
+        height: 80vw;
+    }
+    .cell-cord {
+        font-size: 14px;
+    }
+}
+

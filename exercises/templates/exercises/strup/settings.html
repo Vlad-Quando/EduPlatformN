@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static "exercises/css/strup/settings.css" %}">
+<link rel="stylesheet" href="{% static "css/system-styles/input-range.css" %}">
+<link rel="stylesheet" href="{% static 'css/system-styles/scroller.css' %}">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+{% endblock style %}
+
+{% block content %}
+
+<form method="POST" class="form">
+    {% csrf_token %}
+    <div class="setting-container">
+        <div class="mode">
+            <label class="mode-label">Режим:</label>
+            <p id="mode-selected" class="mode-selected">Таблица</p>
+            <button class="mode-button" id="mode-button" type="button" onclick="showModeOptions()"><i id="mode-button-icon" class='bx bxs-down-arrow'></i></button>
+            <div id="mode-options" class="mode-options">
+                <p class="option-label">Таблица</p>
+                <input name="isTable" id="check1" class="option-input" type="checkbox" checked="True" onchange="changeMode(this)">
+
+                <p class="option-label">Слова</p>
+                <input name="isWords" id="check2" class="option-input" type="checkbox" onchange="changeMode(this)">
+            </div>
+        </div>
+
+        <div class="quantity">
+            <label class="quantity-label">Количество слов:</label>
+            <div class="quantity-input-container">
+                <button class="minus-button" type="button" onclick="minus()">-</button>
+                <input name="quantity" class="quantity-input" type="number" id="quantity-input" min="10" max="50" value="10">
+                <button class="plus-button" type="button" onclick="plus()">+</button>
+            </div>
+        </div>
+
+        <div class="time" id="time">
+            <label class="time-label">Задержка:</label>
+            <div class="time-input-container">
+                <button class="minus-button" type="button" onclick="timeMinus()">-</button>
+                <input name="time" class="time-input" type="number" id="time-input" min="0.5" max="3" value="1" step="0.1" readonly>
+                <button class="plus-button" type="button" onclick="timePlus()">+</button>
+            </div>
+        </div>
+    
+        <button class="start-button" type="submit">Старт</button>
+    </div>
+    
+</form>
+
+<script src="{% static "exercises/js/strup/settings.js" %}"></script>
+
+{% endblock content %}

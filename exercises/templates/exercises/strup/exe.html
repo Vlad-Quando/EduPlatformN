@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static "exercises/css/strup/exe.css" %}">
+{% endblock style %}
+
+{% block content %}
+<input id="mode" type="hidden" data-mode="{{ data.mode }}">
+<input id="time" type="hidden" data-time="{{ data.time }}">
+<input id="words-data" type="hidden" data-words="{{ data.words }}"">
+
+{% autoescape off %}
+<div class="text-container">
+    <div class="table-words" id="table">{{ data.words }}</div>
+    <div class="words-words" id="words">
+        <p class="words-word" id="start-label">Начнём?</p>
+    </div>
+    <div class="words-controls">
+        <button type="button" class="start-words" id="start">Старт</button>
+        <a href="{% url "exercises:exercise-page" "strup-test" %}" class="start-words" id="stop">Завершить</a>
+    </div>
+    
+</div>
+
+{% endautoescape %}
+
+<script src="{% static "exercises/js/strup/exe.js" %}"></script>
+
+{% endblock content %}

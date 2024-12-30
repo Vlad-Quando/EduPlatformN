@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'exercises/css/memo/exe.css' %}">
+{% endblock style %}
+
+{% block content %}
+<input id="data" type="hidden" data-cards-quantity="{{ data.quantity }}" data-preparing-time="{{ data.preparing_time }}" data-placeholder-url="{% static 'img/memo-images/placeholder.jpg' %}">
+<div id="cards-container" class="cards-container">
+    {% for item in data.items %}
+    <div class="image-container">
+        <img class="image closed" src="{{ item.image.url }}">
+        <p class="image-label"></p>
+    </div>
+    {% endfor %}
+</div>
+
+<div id="results" class="results-block">
+    <p class="results-text">Поздравляем!</p>
+    <p id="passed-time" class="results-text">Вы открыли все карточки за 20 сек.</p>
+</div>
+
+<div class="end-but-container">
+    <a class="end-button" href="{% url "exercises:exercise-page" "memo" %}">Завершить</a>
+</div>
+
+<script src="{% static 'exercises/js/memo/exe.js' %}"></script>
+
+{% endblock content %}

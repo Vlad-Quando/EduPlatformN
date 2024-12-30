@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block style %}
+
+<link rel="stylesheet" href="{% static 'main/css/index.css' %}" />
+
+{% endblock style %}
+
+{% block content %}
+
+<div class="options-grid">
+    <div class="option">
+        <a class="option-link" href="{% url "exercises:exercises-list" %}">
+            <span>
+                <img class="option-image" src="{% static "main/img/exercises-list-img.png" %}">
+            </span>
+            <span>
+                <p class="option-label">Упражнения</p>
+            </span>
+        </a>
+    </div>
+    <div class="option">
+        <a class="option-link">
+            <span>
+                <img class="option-image" src="{% static "main/img/settings-img.png" %}">
+            </span>
+            <span>
+                <p class="option-label">Настройки</p>
+            </span>
+        </a>
+    </div>
+    <div class="option">
+        <a class="option-link" href="{% url "users:profile" %}">
+            <span>
+                <img class="option-image" src="{% static "main/img/profile-img.png" %}">
+            </span>
+            <span>
+                <p class="option-label">Профиль</p>
+            </span>
+        </a>
+    </div>
+    <div class="option">
+        <a class="option-link">
+            <span>
+                <img class="option-image" src="{% static "main/img/groups-img.png" %}">
+            </span>
+            <span>
+                <p class="option-label">Группы</p>
+            </span>
+        </a>
+    </div>
+</div>
+
+{% endblock content %}

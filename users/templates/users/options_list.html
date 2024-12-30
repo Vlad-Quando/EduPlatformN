@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'users/css/options_list.css' %}">
+<link rel="stylesheet" href="{% static 'users/css/options_user.css' %}">
+<link rel="stylesheet" href="{% static 'users/css/options_text.css' %}">
+{% endblock style %}
+
+{% block content %}
+
+<div class="content">
+    <div class="options-list">
+        <a class="option" onclick="switchForm('user');">Добавить пользователя</a>
+        <a class="option" onclick="switchForm('text');">Добавить текст</a>
+        <a class="option" onclick="switchForm('memo');">Добавить memo</a>
+        <a class="option" onclick="switchForm('custom');">Персонализация</a>
+        {% comment %} <a class="option" href="#"></a> {% endcomment %}
+    </div>
+    <div class="action-panel">
+    
+        <div class="user-form-container hidden" id="user-form-container">
+            <form action="{% url "users:useradd" %}" method="POST">
+                {% csrf_token %}
+                <div class="input-cols">
+                    <div class="input-group">
+                        <input name='username' type="text" placeholder="Имя пользователя" required>
+                        <input name='firstname' type="text" placeholder="Имя" required>
+                        <input name='lastname' type="text" placeholder="Фамилия" required>
+                    </div>
+                    <div class="input-group">
+                        <input name='email' type="text" placeholder="Адрес эл. почты" required>
+                        <input name='password' type="password" placeholder="Пароль" required>
+                        <input name='confirm_password' type="password" placeholder="Подтверждение пароля" required>
+                    </div>
+                </div>
+                
+                <div class="btn-container">
+                    <button type="submit" class="btn">Создать</button>
+                </div>
+            </form>
+        </div>
+    
+        <div class="text-form-container hidden" id="text-form-container">
+            <form action="{% url "exercises:add_text" %}" method="POST">
+                {% csrf_token %}
+                <div class="input-group">
+                    <input name="name" type="text" class="text_title" placeholder="Заголовок">
+                    <textarea rows="20" name="content" type="text" class="text_content" placeholder="Текст"></textarea>
+                </div>
+                <div class="btn-container">
+                    <button type="submit" class="btn">Добавить</button>
+                </div>
+            </form>
+        </div>
+            
+        <div class="memo-form-container hidden" id="memo-form-container"></div>
+        <div class="custom-form-container hidden" id="custom-form-container"></div>
+    </div>
+</div>
+
+<script src="{% static "users/js/switch_form.js" %}"></script>
+{% endblock content %}

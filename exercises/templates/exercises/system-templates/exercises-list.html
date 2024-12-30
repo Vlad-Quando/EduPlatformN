@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static "exercises/css/system-styles/exercises-list.css" %}">
+{% endblock style %}
+
+{% block content %}
+<div class="exercises-grid">
+    {% for exercise in exercises %}
+    <div class="exercise">
+        <a class="exercise-link" href="{% url "exercises:exercise-page" exercise.slug %}">
+            <img class="exercise-img" src="{{ exercise.image.url }}">
+            <p class="exercise-label">{{ exercise.name }}</p>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content %}

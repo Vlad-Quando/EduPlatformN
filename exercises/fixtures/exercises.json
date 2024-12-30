@@ -1,0 +1,32 @@
+[
+    {
+        "model": "exercises.exercises",
+        "pk": 1,
+        "fields": {
+            "name": "Тексты",
+            "image": "exercises_images/text-exercise-image_vrhtAdV.png",
+            "slug": "texts",
+            "templates_folder_name": "text-exercise-templates"
+        }
+    },
+    {
+        "model": "exercises.exercises",
+        "pk": 2,
+        "fields": {
+            "name": "Memo",
+            "image": "exercises_images/memo-exercise-image_tZ2RnZH.png",
+            "slug": "memo",
+            "templates_folder_name": "memo-exercise-templates"
+        }
+    },
+    {
+        "model": "exercises.exercises",
+        "pk": 3,
+        "fields": {
+            "name": "Скорочтение",
+            "image": "exercises_images/fast_reading-exercise-image_oaImhjM.png",
+            "slug": "skorochtenie",
+            "templates_folder_name": "fast_reading-exercise-templates"
+        }
+    }
+]

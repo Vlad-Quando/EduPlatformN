@@ -1,0 +1,225 @@
+.search-window {
+    position: absolute;
+    top: 10vw;
+    left: 40vw;
+
+    background-color: #fff;
+    min-height: 30vw;
+    max-height: 30vw;
+    min-width: 20vw;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px -4px 15px 100% #0000008a;
+    z-index: 101;
+    display: none;
+
+    transition: display 0.4s;
+}
+.search-content {
+    display: flex;
+    flex-direction: column;
+    height: 30vw;
+}
+.upper-panel {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.search-bar {
+    border: 2px solid gray;
+    border-radius: 7px;
+    margin: 3px;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    flex-grow: 1;
+}
+.search-bar input {
+    border: none;
+    padding: 5px;
+    flex-grow: 10;
+}
+.search-bar input:focus {
+    outline: none;
+}
+.search-eraser {
+    background-color: transparent;
+    border: none;
+    padding: 7px;
+    margin: 3px;
+    border-radius: 5px;
+}
+.search-eraser:hover {
+    background-color: #b3b3b394;
+}
+
+.text-list {
+    display: flex;
+    flex-direction: column;
+    max-height: 100e;
+    overflow-y: auto;
+    /* flex-grow: 1; */
+    padding: 0.5vw;
+}
+.search-option {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3vw;
+    border-bottom: 1px solid #c0c0c0a8;
+    transition: background-color 0.3s;
+}
+.search-option:hover {
+    background-color: #c9c9c9a9;
+}
+.last {
+    border-bottom: none;
+}
+.close-search-win-but {
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+    border: none;
+    margin: 5px;
+    min-width: 1vw;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 0.3s;
+}
+.close-search-win-but:hover {
+    background-color: #9b9b9b96;
+}
+.close-search-win-but i {
+    margin: auto;
+    font-size: 2em;
+}
+
+@media(max-width: 1100px) {
+    .search-window {
+        top: 15vw;
+        left: 35vw;
+
+        min-height: 40vw;
+        max-height: 40vw;
+        min-width: 30vw;
+    }
+    .search-content {
+        height: 40vw;
+    }
+    /* .text-list {
+        height: 35vw;
+    } */
+}
+@media(max-width: 1000px) {
+    .search-window {
+        max-height: 42vw;
+    }
+    .search-content {
+        height: 42vw;
+    }
+}
+@media(max-width: 900px) {
+    .search-window {
+        top: 20vw;
+        left: 30vw;
+
+        min-height: 50vw;
+        max-height: 50vw;
+        min-width: 40vw;
+    }
+    .search-content {
+        height: 50vw;
+    }
+    /* .text-list {
+        height: 44vw;
+    } */
+}
+@media(max-width: 800px) {
+    .search-window {
+        top: 22vw;
+        left: 25vw;
+
+        min-height: 60vw;
+        max-height: 60vw;
+        min-width: 50vw;
+    }
+    .search-content {
+        height: 60vw;
+    }
+    /* .text-list {
+        height: 53vw;
+    } */
+}
+@media(max-width: 670px) {
+    .search-window {
+        top: 23vw;
+        left: 20vw;
+
+        min-height: 70vw;
+        max-height: 70vw;
+        min-width: 60vw;
+    }
+    .search-content {
+        height: 70vw;
+    }
+    /* .text-list {
+        height: 62vw;
+    } */
+    .search-option {
+        margin: 5px 0;
+        padding: 0.4vw;
+    }
+}
+@media(max-width: 570px) {
+    .search-window {
+        top: 25vw;
+        left: 17vw;
+
+        min-height: 80vw;
+        max-height: 80vw;
+        min-width: 66vw;
+    }
+    .search-content {
+        height: 80vw;
+    }
+    /* .text-list {
+        height: 70vw;
+    } */
+}
+@media(max-width: 470px) {
+    .search-window {
+        top: 38vw;
+        left: 13vw;
+
+        min-height: 90vw;
+        max-height: 90vw;
+        min-width: 74vw;
+    }
+    .search-content {
+        height: 90vw;
+    }
+    /* .text-list {
+        height: 79vw;
+    } */
+}
+@media(max-width: 400px) {
+    .search-window {
+        top: 0vw;
+        left: 0vw;
+
+        min-height: 100%;
+        max-height: 100%;
+        min-width: 100%;
+    }
+    .search-content {
+        height: 100vw;
+    }
+    /* .text-list {
+        height: calc(100% - 40px);
+    } */
+}

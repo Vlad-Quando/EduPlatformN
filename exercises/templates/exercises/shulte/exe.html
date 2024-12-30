@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block style %}
+
+<link rel="stylesheet" href="{% static "exercises/css/shulte/exe.css" %}">
+
+{% endblock style %}
+
+{% block content %}
+<input id="data" type="hidden" data-size="{{ data.size }}" data-angle="{{ data.angle }}">
+<input id="data" type="hidden" data-angle="{{ data.angle }}">
+<div class="upper-container">
+    <div class="end-but-container upper-el">
+        <a class="end-button" href="{% url "exercises:exercise-page" "shulte-table" %}">Завершить</a>
+    </div>
+    <div class="label-container upper-el">
+        <p class="current-letter" id="current-letter"></p>
+        <p class="current-letter time-passed" id="time-passed"></p>
+    </div>
+    <div class="upper-el"></div>
+</div>
+
+
+<div class="table" id="table">
+    {% for item in data.unordered_array %}
+    <div id="" class="cell" onclick="shulteGame(event)">
+        <p class="label">{{ item }}</p>
+    </div>
+    {% endfor %}
+    <div id="center" class="central-point"></div>
+    {% for item in data.ordered_array %}
+    <div class="hidden-cell">
+        <p class="label">{{ item }}</p>
+    </div>
+    {% endfor %}
+</div>
+
+<script src="{% static "exercises/js/shulte/exe.js" %}"></script>
+
+{% endblock content %}

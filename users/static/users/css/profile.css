@@ -1,0 +1,137 @@
+.profile-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    width: fit-content;
+    align-items: center;
+}
+
+/* .profile-picture-container {
+    padding: 5px;
+    background-color: white;
+    min-width: 170px;
+    min-height: 170px;
+} */
+
+.profile-picture {
+    background-color: white;
+    margin: 10px auto;
+    padding: 10px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 90px;
+    min-width: 165px;
+    min-height: 165px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.picture {
+    border-radius: 20px;
+    width: 200px;
+}
+
+.profile-data {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+.data-line {
+    border-bottom: 2px solid rgba(45, 80, 144, 0.826);
+    width: 100%;
+}
+.data-header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 5px;
+    padding: 5px 7px 5px 5px;
+}
+.data-body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 5px auto;
+    padding: 5px;
+    min-width: 100px;
+    /* border: 2px solid rgba(45, 80, 144, 0.826); */
+}
+
+.manage-panel {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.manage-option {
+    background-color: white;
+    color: black;
+
+    padding: 10px 15px 10px 15px;
+    width: 100%;
+    height: 100%;
+
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+
+    text-align: center;
+    text-decoration: none;
+
+    transition: background-color 0.3s;
+}
+
+.exit-menu {
+    border-left: none;
+    border-bottom: none;
+    border-top: none;
+    border-right: 1px solid black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.exit-single {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+.useradd {
+    border-left: 1px solid black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.manage-option:hover {
+    background-color: rgb(225, 225, 225);
+}
+.manage-option:active {
+    background-color: rgb(171, 171, 171);
+}
+
+
+@media(max-width: 630px) {
+    .data-container {
+        flex-direction: column;
+    }
+}
+@media(max-width: 400px) {
+    .data-header,
+    .data-body {
+        font-size: 14px;
+    }
+}
